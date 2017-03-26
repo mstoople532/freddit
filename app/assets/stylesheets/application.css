@@ -69,7 +69,8 @@
    font-size: 12px;
    position: absolute;
    padding-top: 25px;
-   padding-left: 10px
+   padding-left: 10px;
+   word-spacing: 4px
  }
 
  ol {

@@ -1,3 +1,5 @@
+submit to freddit
+
 <%= form_for @submission do |f| %>
 
   <%= f.label :link %>
@@ -6,6 +8,6 @@
   <%= f.label :title %>
   <%= f.text_field :title, required: true%>
 
-  <%= f.submit %>
+  <%= f.submit "submit"%>
 
 <% end %>
