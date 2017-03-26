@@ -9,6 +9,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <nav class= "top">
+        MY SUBREDDITS <a>&#9660</a>
+        <span>HOME</span> - POPULAR - ALL - RANDOM - ASKREDDIT - FUNNY - PICS - WORLDNEWS - VIDEOS - NEWS - TODAYILEARNED - GAMING - MOVIES - GIFS - AWW - MILDLYINTERESTING - SHOWERTHOUGHTS - IAMA - JOKES - TELEVISION - OLD<b> &nbsp EDIT » </b>
+      </nav>
+      <img class= "logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1280px-Reddit_logo_and_wordmark.svg.png" alt="">
+      <nav class= "logobar"> hot new rising controversial top</nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

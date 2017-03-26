@@ -1,0 +1,9 @@
+<ol>
+  <% @submissions.each do |submission| %>
+    <li><%= link_to "#{submission.title}", "#{submission.link}"%></li>
+      <p class="time"> submitted <%= submission.timestampdiff %> </p>
+      <p class="comments"> <%= link_to "comments", "/comments" %></p>
+  <% end %>
+</ol>
+
+<%= link_to("Submit a new link", action: "new") %>

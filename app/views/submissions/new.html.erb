@@ -1,0 +1,11 @@
+<%= form_for @submission do |f| %>
+
+  <%= f.label :link %>
+  <%= f.text_field :link, required: true %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title, required: true%>
+
+  <%= f.submit %>
+
+<% end %>

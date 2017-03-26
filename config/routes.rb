@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  root controller: "submissions", action: "index"
+
+  resources :submissions, except: [:show, :edit, :update, :destroy]
+  resources :comments, except: [:show, :edit, :update, :destroy]
+
+  get "comments/:submission_id", controller: "comments", action:"index"
 end
