@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## A Spoofed version of Reddit, Freddit!
 
-Things you may want to cover:
+Links are shown on the root and "/submissions" directories. You can click the Reddit icon or Home link to return to that page.
 
-* Ruby version
+Click "comments" for comments that were submitted about the link, as well as to submit your own comment.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Click the "submit a new link" button on the index to submit a new link!
