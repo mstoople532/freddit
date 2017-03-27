@@ -1,6 +1,5 @@
 class Submission < ApplicationRecord
   has_many :comments
-
   def timestampdiff
     diff = Time.now - self.submission_time
     # TODO fix the /s and specify cases for one day/hour/minute

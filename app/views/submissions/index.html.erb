@@ -2,7 +2,7 @@
   <% @submissions.each do |submission| %>
     <li><%= link_to "#{submission.title}", "#{submission.link}"%></li>
       <p class="time"> submitted <%= submission.timestampdiff %> </p>
-      <p class="comments"> <%= link_to "comments", comments_url(submission_id: submission.id)%></p>
+      <p class="comments"><%= link_to "#{submission.comments.count} comments", comments_url(submission_id: submission.id)%></p>
   <% end %>
 </ol>
 
