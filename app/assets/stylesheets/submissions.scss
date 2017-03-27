@@ -26,3 +26,24 @@ form{
   padding: 20px 0px 20px 10px;
   background-color: #CEE3F8;
 }
+
+.submit a:link{
+
+  float: right;
+  text-align: right;
+  background-color: #F1F7FD;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #C4DBF1;
+  font-weight: bold;
+  color: #336699,
+}
+
+.submit a:visited{
+  float: right;
+  text-align: right;
+  background-color: #F1F7FD;
+  padding: 8px 8px 8px 8px;
+  border: 1px solid #C4DBF1;
+  font-weight: bold;
+  color: #336699,
+}
