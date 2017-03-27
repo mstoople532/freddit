@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :submissions, except: [:show, :edit, :update, :destroy]
   resources :comments, except: [:show, :edit, :update, :destroy]
 
-  get "comments/:submission_id", controller: "comments", action:"index"
+  get "comments/:submission_id", controller: "comments", action: "index"
 end

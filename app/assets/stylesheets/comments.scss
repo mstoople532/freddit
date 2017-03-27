@@ -1,3 +1,13 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ul{
+  // background-color: red;
+  position: absolute;
+  padding: 250px 50px 100px 50px;
+  list-style: none;
+}
+ .tag{
+   font-size: 10px;
+   color: #888888;
+ }

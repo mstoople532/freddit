@@ -1,0 +1,12 @@
+<%= form_for @comment do |f| %>
+  <%= f.text_area :comment_text, size: "60x10" %>
+   <%= hidden_field_tag "comment[submission_id]", "#{@submission.id}" %>
+  <%= f.submit "save" %>
+<% end %>
+
+<ul>
+  <% @comments.each do |comment| %>
+    <li class="tag">Posted <%= comment.timestampdiff %></li>
+    <li><%= comment.comment_text %></li>
+  <% end %>
+</ul>
