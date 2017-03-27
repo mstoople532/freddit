@@ -18,6 +18,7 @@
    font-family: "Verdana";
    margin: 0;
    padding: 0;
+   text-decoration: none;
  }
 
 .top{
@@ -70,7 +71,7 @@
    position: absolute;
    padding-top: 25px;
    padding-left: 10px;
-   word-spacing: 4px
+   word-spacing: 4px;
  }
 
  ol {
