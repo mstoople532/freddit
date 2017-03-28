@@ -8,7 +8,8 @@ class CommentsController < ApplicationController
   def create
     time = { comment_time: Time.now }
     params = comment_params.merge(time)
-    @comment = Comment.create(params)
+    @comment = Comment.new(params)
+    @comment.save!
     redirect_to "/"
   end
 
