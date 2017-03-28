@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     extra_params = { comment_time: Time.now, user_id: current_user.id }
     params = comment_params.merge(extra_params)
     @comment = Comment.new(params)
-    @comment.save!
+    @comment.save
     redirect_to "/"
   end
 

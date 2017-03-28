@@ -43,7 +43,7 @@
    font-weight: bold;
  }
 
- nav a{
+ nav c{
    color: gray;
  }
 
@@ -94,7 +94,7 @@ main {
 #login_or_signup{
   position: absolute;
   top: 19px;
-  right: 125px;
+  right: 120px;
   display: inline;
   font-weight: normal;
   word-spacing: 2px;
@@ -102,4 +102,8 @@ main {
   padding: 4px 4px 4px 4px;
   border-bottom: 1px solid #5F99CF;
   border-top-left-radius: 8px;
+}
+
+nav a{
+  color: #336699;
 }

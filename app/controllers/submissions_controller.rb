@@ -14,7 +14,7 @@ class SubmissionsController < ApplicationController
     params = submission_params.merge(extra_params)
     @submission = Submission.new(params)
 
-    if @submission.save!
+    if @submission.save
       session[:success] = "Link submitted!"
       redirect_to submissions_path
     else
@@ -29,7 +29,7 @@ class SubmissionsController < ApplicationController
 
   private def authorize!
     unless current_user
-      session[:error] = "Please log in"
+      flash[:error] = "Please log in"
       redirect_to new_sessions_path
     end
   end
