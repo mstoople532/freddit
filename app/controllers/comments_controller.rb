@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   def index
     @comment = Comment.new
-    @comments = Comment.all.order(comment_time: :desc)
+    @comments = Comment.where(submission_id: params[:submission_id]).order(comment_time: :desc)
     @submission = Submission.find(params[:submission_id])
   end
 
