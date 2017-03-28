@@ -90,3 +90,16 @@
 main {
   padding: 25px
 }
+
+#login_or_signup{
+  position: absolute;
+  top: 19px;
+  right: 125px;
+  display: inline;
+  font-weight: normal;
+  word-spacing: 2px;
+  background-color: #EFF7FF;
+  padding: 4px 4px 4px 4px;
+  border-bottom: 1px solid #5F99CF;
+  border-top-left-radius: 8px;
+}
