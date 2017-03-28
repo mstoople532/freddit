@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
  *{
    box-sizing: border-box;
    font-family: "Verdana";
@@ -84,11 +85,11 @@
      counter-increment: item;
      color: #B7B7B7;
      padding: 10px;
-     font-family: "Arial"
+     font-family: "Arial";
  }
 
 main {
-  padding: 25px
+  padding: 25px;
 }
 
 #login_or_signup{
