@@ -6,7 +6,7 @@
 
 <ul>
   <% @comments.each do |comment| %>
-    <li class="tag">Posted <%= comment.timestampdiff %></li> by <%= comment.user&.username %></p>
+    <li class="tag">Posted <%= comment.timestampdiff %> by <%= comment.user&.username %></li>
     <li><%= comment.comment_text %></li>
   <% end %>
 </ul>
