@@ -10,7 +10,7 @@ class User < ApplicationRecord
   end
 
   def password=(plaintext_password)
-    encrypted_password = BCrypt::Password.create(plaintext_password)
-    self.password_hash = encrypted_password
+    @password = BCrypt::Password.create(plaintext_password)
+    self.password_hash = @password
   end
 end
