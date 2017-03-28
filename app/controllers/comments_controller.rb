@@ -6,8 +6,8 @@ class CommentsController < ApplicationController
   end
 
   def create
-    time = { comment_time: Time.now }
-    params = comment_params.merge(time)
+    extra_params = { comment_time: Time.now, user_id: current_user.id }
+    params = comment_params.merge(extra_params)
     @comment = Comment.new(params)
     @comment.save!
     redirect_to "/"

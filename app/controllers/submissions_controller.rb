@@ -10,11 +10,11 @@ class SubmissionsController < ApplicationController
   end
 
   def create
-    time = { submission_time: Time.now }
-    params = submission_params.merge(time)
+    extra_params = { submission_time: Time.now, user_id: current_user.id }
+    params = submission_params.merge(extra_params)
     @submission = Submission.new(params)
 
-    if @submission.save
+    if @submission.save!
       session[:success] = "Link submitted!"
       redirect_to submissions_path
     else
