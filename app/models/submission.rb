@@ -15,4 +15,9 @@ class Submission < ApplicationRecord
       "less than one minute ago"
     end
   end
+
+  def submission_username
+    user = User.find_by(self.user_id)
+    user.username
+  end
 end

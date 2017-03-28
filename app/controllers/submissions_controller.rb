@@ -1,4 +1,5 @@
 class SubmissionsController < ApplicationController
+  before_action :authorize!, except: [:index]
   def index
     @submissions = Submission.all.order(submission_time: :desc)
     @comments = Comment.all
@@ -24,5 +25,12 @@ class SubmissionsController < ApplicationController
 
   private def submission_params
     params.require(:submission).permit(:link, :title)
+  end
+
+  private def authorize!
+    unless current_user
+      session[:error] = "Please log in"
+      redirect_to new_sessions_path
+    end
   end
 end
