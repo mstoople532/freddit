@@ -2,11 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 ul{
-  // background-color: red;
-  position: absolute;
-  padding: 250px 0px 0px 0px;
   list-style: none;
+  margin-top: 20px;
   margin-left: 20px;
+}
+
+li{
+  margin-bottom: 10px;
 }
  .tag{
    font-size: 10px;
