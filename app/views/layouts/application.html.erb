@@ -13,17 +13,30 @@
     <header>
       <nav class= "top">
         MY SUBREDDITS <c>&#9660</c>
-        <a href="/"><span>HOME</span></a>
+        <a href="/">
+          <span>HOME</span>
+        </a>
          - POPULAR - ALL - RANDOM - ASKREDDIT - FUNNY - PICS - WORLDNEWS - VIDEOS - NEWS - TODAYILEARNED - GAMING - MOVIES - GIFS - AWW - MILDLYINTERESTING - SHOWERTHOUGHTS - IAMA - JOKES - TELEVISION - OLD<b> &nbsp EDIT » </b>
       </nav>
       <a href="/">
         <img class= "logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1280px-Reddit_logo_and_wordmark.svg.png" alt="">
       </a>
-      <nav class= "logobar"> <span id="current">hot</span> new rising controversial top gilded wiki promoted
+      <nav class= "logobar">
+        <span id="current">hot</span>
+        new rising controversial top gilded wiki promoted
         <% if current_user %>
           <p id="login_or_signup"> <%= current_user.username %> | <%= link_to "logout", sessions_path, method: :delete %></p>
         <% else %>
-          <p id="login_or_signup"> Want to join? <a href= <%= new_sessions_path %> >Log in</a> or <a href= <%= new_user_path %> >sign up</a> in seconds.&nbsp| <a><b>English</b><a/></p>
+          <p id="login_or_signup">
+             Want to join?
+             <a href= <%= new_sessions_path %> >
+               Log in
+             </a>
+             or 
+             <a href= <%= new_user_path %> >sign up</a>
+             in seconds.&nbsp|
+             <a><b>English</b></a>
+          </p>
         <% end %>
       </nav>
     </header>
